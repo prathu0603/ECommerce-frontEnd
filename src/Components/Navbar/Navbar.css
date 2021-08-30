@@ -1,0 +1,138 @@
+/* Main NavBar */
+.navbar {
+  width: 100%;
+  height: 3.8rem;
+  background-color: #171717;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1rem;
+  z-index: 50;
+}
+
+.navbar_logo {
+  font-size: 1.4rem;
+  color: #f4f4f4;
+  cursor: pointer;
+}
+.navbar_links {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  margin: 0px;
+}
+.navbar_links > li {
+  padding-left: 1.5rem;
+}
+.navbar_links > li > a {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  font-size: 1.2rem;
+  color: #f4f4f4;
+}
+
+.cart_link {
+  background: #333;
+  padding: 0.5rem 0.8rem;
+  border-radius: 0.8rem;
+}
+.cart_link:hover {
+  background: rgb(163, 163, 163);
+  color: black;
+}
+
+.hamburger_menu {
+  width: 1.5rem;
+  height: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  display: none;
+}
+.hamburger_logo1 {
+  font-size: 1.5rem;
+  color: white;
+}
+.hamburger_logo1:hover {
+  color: rgb(79, 170, 131);
+}
+
+@media (max-width: 960px) {
+  .navbar_links {
+    display: none;
+  }
+  .hamburger_menu {
+    display: block;
+  }
+}
+@media (max-width: 500px) {
+  .navbar_logo {
+    font-size: 1rem;
+  }
+}
+
+/* BackDrop */
+.backdrop {
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 100;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+/* Sidedrawer */
+.sidedrawer {
+  width: 70%;
+  height: 100vh;
+  background-color: rgba(255, 255, 255, 0.938);
+  z-index: 200;
+  position: fixed;
+  top: 0;
+  left: 0;
+  transform: translateX(-100%);
+  transition: all 0.3s ease-out;
+}
+.sidedrawer.show {
+  transform: translateX(0);
+}
+.badge {
+  font-size: 1rem !important;
+}
+
+.sidedrawer_links {
+  margin-top: 2rem;
+  list-style: none;
+  padding: 0px;
+}
+.sidedrawer_links > li {
+  display: flex;
+  align-items: center;
+}
+.siderdrawer_btn {
+  margin: 0rem auto 1rem;
+}
+.sidedrawer_links > li > a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex: 1;
+  padding: 1rem;
+  text-decoration: none;
+  color: #171717;
+  font-size: 1.6rem;
+}
+.sidedrawer_links > li > a:hover {
+  background-color: #171717;
+  color: white;
+}
+
+@media (min-width: 960px) {
+  .sidedrawer {
+    display: none;
+  }
+}
