@@ -1,5 +1,5 @@
 # Demo
-https://ecommerce-site-v1.netlify.app
+https://ecommerce-site-v2.netlify.app
 
 # Getting Started with Create React App
 
